@@ -11,14 +11,21 @@ def responder(mensagem):
 @bot.message_handler(commands=["redes"])
 def responder(mensagem):
     bot.reply_to(mensagem,"Jownao se encontra atualmente nessas redes sociais:\n"+
-                          "Instagram: instagram.com/jownao\n"+
+                          "Instagram: instagraMatriculas.com/jownao\n"+
                           "Twitch: twitch.tv/jownao\n"+
                           "Github: github.com/Jownao")
 
 @bot.message_handler(commands=["amigos"])
 def responder(mensagem):
-    bot.reply_to(mensagem,"Amigos:\n"+
-                          "Carlo\nRulio\nVicsk\nAlbert\nzaboyz ltda")
+    bot.reply_to(mensagem,"Amigos:"+
+                        "\nzaboyz ltda"+
+                        "\nCarlo\nRulio\nVicsk\nAlbert\n"+
+                        "\nSócios:"+
+                        "\nDudão e Gladão")
+
+@bot.message_handler(commands=["mafa"])
+def responder(mensagem):
+    bot.reply_to(mensagem,"**É LUAAAAAAAAAAAA**")
 
 
 @bot.message_handler(func=lambda m: True)
@@ -47,3 +54,8 @@ markup.row(itembtnc, itembtnd, itembtne)
 bot.send_message(chat_id, "Escolha oque desejar meu caro:", reply_markup=markup)
 
 bot.polling()
+
+
+
+
+
